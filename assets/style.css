@@ -35,7 +35,13 @@ body {
   margin: 20px 0;
   padding: 10px;
   border: 1px solid #1f7070;
-  background: rgba(31, 112, 112, 0.05);
+  animation: container-glow 3s ease-in-out infinite;
+}
+
+@keyframes container-glow {
+  0% { box-shadow: 0 0 10px rgba(32, 201, 201, 0.2); }
+  50% { box-shadow: 0 0 20px rgba(32, 201, 201, 0.4); }
+  100% { box-shadow: 0 0 10px rgba(32, 201, 201, 0.2); }
 }
 
 .buttons img {
