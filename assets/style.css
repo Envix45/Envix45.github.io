@@ -87,40 +87,50 @@ h2:after {
   background: linear-gradient(90deg, #1f7070 0%, transparent 100%);
 }
 
-.staff-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 20px 0;
+.staff-team {
+  display: flex;
+  flex-direction: column;
+}
+
+.staff-section {
+  margin-bottom: 20px;
+}
+
+.staff-section h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.staff-members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .staff-member {
-  padding: 8px;
-  border: 1px solid #1f7070;
-  background: rgba(31, 112, 112, 0.05);
-  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f0f0f0;
 }
 
-.staff-member:hover {
-  background: rgba(31, 112, 112, 0.15);
-  transform: translateX(5px);
+.staff-member.owner {
+  background-color: #ffcccc;
 }
 
-.owner {
-  color: #d54f4f;
-  border-color: #d54f4f;
+.staff-member.admin {
+  background-color: #ccccff;
 }
 
-.admin {
-  color: #2aa5a5;
+.staff-member.mod {
+  background-color: #ccffcc;
 }
 
-.mod {
-  color: #8f8f2a;
-}
-
-.helper {
-  color: #666;
+.staff-member.helper {
+  background-color: #ffffcc;
 }
 
 a {
