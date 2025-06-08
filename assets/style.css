@@ -173,6 +173,12 @@ p {
   );
 }
 
+.staff-category-separator {
+    border: none;
+    border-top: 1px solid #ccc; 
+    margin: 20px 0; 
+}
+
 .marquee {
   display: inline-block;
   white-space: nowrap;
